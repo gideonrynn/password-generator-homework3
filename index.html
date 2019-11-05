@@ -1,111 +1,77 @@
 <!DOCTYPE html>
 
 <html lang="en-us">
-    <head>
-        <meta charset="UTF-8">
 
-        <!--Bootstrap Meta "Viewport" HTML-->
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
 
-        <title>Password Generator</title>
+    <meta charset="UTF-8">
 
-        <!-- Bootstrap Stylesheet -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--Bootstrap Meta "Viewport" HTML-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-        <!-- Local Portfolio Stylesheet-->
-        <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+    <title>Password Generator</title>
 
-        <!-- JavaScript External Sheet -->
-        <script type="text/javascript" src="script.js"></script>
+    <!-- Bootstrap Stylesheet -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    </head>
+    <!-- Local Portfolio Stylesheet-->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+    <!-- JavaScript External Sheet -->
+    <script type="text/javascript" src="script.js"></script>
+
+  </head>
 
 
-    <body>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-around">
+  <body background="assets/images/circles-light.png">
+
+    <nav class="navbar navbar-expand-lg navbar-light justify-content-around" style="background-color: #600060;">
                 
-                <a class="navbar-brand" href="#">Password Generator</a>
+      <a class="navbar-brand" style="color: #cccccc;" href="#">Password Generator</a>
            
-            </nav>
+    </nav>
         
-        <div class="container">
+    <div class="container">
 
-            <div class="row">
+      <div class="row">
 
-                <div class="col-sm-12">
-                        <form class="needs-validation" novalidate>
-                                <div class="form-row">
-                                  <div class="col-md-4 mb-3">
-                                    <label for="validationCustom01">First name</label>
-                                    <input type="text" class="form-control" id="validationCustom01" placeholder="First name" value="Mark" required>
-                                    <div class="valid-feedback">
-                                      Looks good!
-                                    </div>
-                                  </div>
-                                  <div class="col-md-4 mb-3">
-                                    <label for="validationCustom02">Last name</label>
-                                    <input type="text" class="form-control" id="validationCustom02" placeholder="Last name" value="Otto" required>
-                                    <div class="valid-feedback">
-                                      Looks good!
-                                    </div>
-                                  </div>
-                                  <div class="col-md-4 mb-3">
-                                    <label for="validationCustomUsername">Username</label>
-                                    <div class="input-group">
-                                      <div class="input-group-prepend">
-                                        <span class="input-group-text" id="inputGroupPrepend">@</span>
-                                      </div>
-                                      <input type="text" class="form-control" id="validationCustomUsername" placeholder="Username" aria-describedby="inputGroupPrepend" required>
-                                      <div class="invalid-feedback">
-                                        Please choose a username.
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="form-row">
-                                  <div class="col-md-6 mb-3">
-                                    <label for="validationCustom03">City</label>
-                                    <input type="text" class="form-control" id="validationCustom03" placeholder="City" required>
-                                    <div class="invalid-feedback">
-                                      Please provide a valid city.
-                                    </div>
-                                  </div>
-                                  <div class="col-md-3 mb-3">
-                                    <label for="validationCustom04">State</label>
-                                    <input type="text" class="form-control" id="validationCustom04" placeholder="State" required>
-                                    <div class="invalid-feedback">
-                                      Please provide a valid state.
-                                    </div>
-                                  </div>
-                                  <div class="col-md-3 mb-3">
-                                    <label for="validationCustom05">Zip</label>
-                                    <input type="text" class="form-control" id="validationCustom05" placeholder="Zip" required>
-                                    <div class="invalid-feedback">
-                                      Please provide a valid zip.
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="form-group">
-                                  <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-                                    <label class="form-check-label" for="invalidCheck">
-                                      Agree to terms and conditions
-                                    </label>
-                                    <div class="invalid-feedback">
-                                      You must agree before submitting.
-                                    </div>
-                                  </div>
-                                </div>
-                                <button class="btn btn-primary" type="submit">Submit form</button>
-                              </form>
+        <div class="col-sm-12">
 
-                </div>
+          <form class="p-5" style="border-bottom: 1px grey;">
+            
+            <div class="form-group">
+              
+              <label for="password"><h2>Generate a Password</h2></label>
+              
+              <hr>
+
+              <input type="text" class="form-control rounded-pill text-center" id="display" placeholder="Your Secure Password">
+
+              <hr>
 
             </div>
+            
+            <div class="buttons justify-content-center">
+
+              <button type="button" class="btn btn-danger rounded-pill">Generate Password</button>
+
+              <button type="button" class="btn btn-secondary rounded-pill">Copy to Clipboard</button>
+
+            </div>
+          
+          </form>
+
 
         </div>
+        <!-- End Column -->
 
-    </body>
+      </div>
+      <!-- End Row -->
+
+    </div>
+    <!-- End Container -->
+
+  </body>
 
 </html>
