@@ -8,9 +8,9 @@ Code
 User
 1) prompt user for password length - prompt("Length of password? (between 8 and 128 characters)");
 2) store user answer for true/false
-3) prompt user for special characters - prompt("Add special characters?"); - "!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~" https://www.owasp.org/index.php/Password_special_characters
+3) confirm use special characters - confirm("Add special characters?"); - "!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~" https://www.owasp.org/index.php/Password_special_characters
 4) store user answer for true/false
-5) prompt user for numeric characters - prompt("Add numeric characters?"); - 
+5) confirm user for numeric characters - confirm("Add numeric characters?"); - 
 6) store user answer for true/false
 
 
