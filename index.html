@@ -38,7 +38,7 @@
 
           <form class="p-5" style="border-bottom: 1px grey;">
             
-            <div class="form-group">
+            <div class="form-group" style="overflow-wrap: inherit;">
               
               <label for="password"><h4>Generate a Password</h4></label>
               
@@ -55,7 +55,7 @@
               <!-- When Generate Password button is clicked, call generatePassword function -->
               <button type="button" id="btngeneratepw" class="btn btn-danger rounded-pill mx-5" onclick="generatePassword()">Generate Password</button>
 
-              <button type="button" id="btncopytoclip" class="btn btn-secondary rounded-pill mx-5" disabled>Copy to Clipboard</button>
+              <button type="button" id="btncopytoclip" class="btn btn-secondary rounded-pill mx-5" onclick="copyToClipboard()">Copy to Clipboard</button>
 
             </div>
             <!-- End Buttons Div -->
@@ -73,50 +73,7 @@
     
 
      <!-- JavaScript -->
-     <script type="text/javascript">
-
-
-      
-       //when the button is clicked, I want the following function to run to generate the password//
-      function generatePassword() {
-
-      
-      //User prompts and questions//
-      var userCharacter = prompt("How many characters do you want your password to be? (between 8 - 128)");
-
-      var userChoiceSpecial = confirm("Add special characters? (ex/?!K@)");
-
-      var userChoiceNumbers = confirm("Add numeric characters? (ex/0123)");
-
-      var userChoiceUpperCase = confirm("Add uppercase characters? (ex/ABC)");
-
-      var userChoiceLowerCase = confirm("Add lowercase characters? (ex/abc)");
-
-
-      //create variables for each set of characters that can possibly go into the password//
-      var stringSpecial = "!#$%&'()*+,-./:;<=>?@[]\^_`{|}~";
-
-      var stringNumbers = "0123456789";
-      
-      var stringUpperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-    
-      var stringLowerCase = "abcdefghijklmnopqrstuvwxyz";
-
-      //Empty variable for characters to pull into based on user selections
-
-      var newPassword = "";
-
-      for (var i = 0; i < userCharacter; i++) {
-        
-        newPassword = newPassword + stringUpperCase.charAt(Math.floor(Math.random() * Math.floor(stringUpperCase.length)));
-
-}
-      //add password to Generate Password box//
-      document.getElementById("displaypw").value = newPassword;
-
-}
-
-     </script>
+     <script type="text/javascript" src="assets/script/script.js"></script>
 
   </body>
 
