@@ -56,6 +56,11 @@
       if (userChoiceLowerCase) {
         newString += stringLowerCase;
       }
+
+      if (newString === "") {
+        alert("NOTE: You must choose a character type to display a password.");
+        
+      }
     
     }
 
