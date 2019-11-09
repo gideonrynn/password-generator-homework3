@@ -82,6 +82,7 @@ function copyToClipboard() {
   
     //select and copy text//
     copyText.select();
+    copyText.setSelectionRange(0, 99999);
     document.execCommand("copy");
 
     //replaces password with text indicating it has been copied to clipboard//
