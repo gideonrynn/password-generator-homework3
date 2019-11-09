@@ -38,13 +38,13 @@
 
           <form class="p-5" style="border-bottom: 1px grey;">
             
-            <div class="form-group" style="overflow-wrap: inherit;">
+            <div class="form-group">
               
               <label for="password"><h4>Generate a Password</h4></label>
               
               <hr>
 
-              <input type="text" readonly class="form-control-plaintext text-center rounded w-100" id="displaypw" placeholder="Your Secure Password" style="height: 150px; border: 1px dotted #e9e9e9;">
+              <input type="text" readonly class="form-control-plaintext text-center rounded" id="displaypw" placeholder="Your Secure Password" style="height: 150px; border: 1px dotted #e9e9e9;">
 
               <hr>
 
@@ -55,6 +55,7 @@
               <!-- When Generate Password button is clicked, call generatePassword function -->
               <button type="button" id="btngeneratepw" class="btn btn-danger rounded-pill mx-5" onclick="generatePassword()">Generate Password</button>
 
+              <!-- When Copy to Clipboard button is clicked, call copyToClipboard function -->
               <button type="button" id="btncopytoclip" class="btn btn-secondary rounded-pill mx-5" onclick="copyToClipboard()">Copy to Clipboard</button>
 
             </div>

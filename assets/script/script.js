@@ -22,10 +22,13 @@
     //Prompt user to enter the number of characters//
     var userCharLength = prompt("How many characters do you want your password to be? (between 8 - 128)");
 
+    //if there is no character entered, or length is less than 8 or more than 128, prompt user regarding parameters//
+
     if (userCharLength === "" || userCharLength < 8 || userCharLength > 128) {
       alert ("Character length must be between 8 and 128");
     }
 
+    //with above condition met, continue to ask user on type of characters to be included in password//
     else {
 
     var userChoiceNumbers = confirm("Add numeric characters?  (ex/0123)");
@@ -33,11 +36,10 @@
     var userChoiceUpperCase = confirm("Add uppercase characters?  (ex/ABC)");
 
     var userChoiceLowerCase = confirm("Add lowercase characters?  (ex/abc)");
-
     
     var userChoiceSpecial = confirm("Add special characters?  (ex/?!K@)");
 
-    //if the user does not enter a character length between 8 and 128, or does not enter anything, alert the user and break processing//
+    //fill newString variable with Strings based on user selection//
 
       if (userChoiceSpecial) {
         newString += stringSpecial;
@@ -68,16 +70,17 @@
 
 }
 
+//when the Copy to Clipboard button is clicked, the following function should run//
 function copyToClipboard() {
-    /* Get the text field */
+    //grab displaypw input from which the password can be copied//
     var copyText = document.getElementById("displaypw");
   
-    /* Select the text field */
+    //select and copy text//
     copyText.select();
-  
-    /* Copy the text inside the text field */
     document.execCommand("copy");
+
+    //replaces password with text indicating it has been copied to clipboard//
+    document.getElementById("displaypw").value = "Password copied to clipboard; use paste or ctrl v."
   
-    /* Alert the copied text */
-    alert("Copied the text: " + copyText.value);
   }
+
