@@ -3,48 +3,24 @@ This is a repository for the NU Coding Bootcamp Homework 3
 
 ## Purpose
 
-This is a GitHub repository for a password generator application. 
+This application will assist users with creating strong passwords quickly that meet a range of security requirements. This can be useful for employees, businesses, and anyone who needs unique passwords generated quickly.
+
+##Usage
+
+The user will be prompted to choose the length and character type (special, numeric, lowercase, uppercase). The user may also choose to copy to clipboard, which will allow them to paste on or in any text input on their phone and computer.
 
 
 ## Screenshot of Completed Application
 
-![password generator demo](./Assets/03-JavaScript-homework-demo.png)
+![password generator screenshot](./assets/images/password-generator-screenshot-scd11919.PNG)
 
 ## GitHub Pages Link
-
+https://gideonrynn.github.io/password-generator-homework3/
 
 
 ## Installation
 
 With GitHub account, clone or download repository using link. 
-
-
-## Usage
-
-This will application will assist users with creating strong passwords quickly that meet a range of security requirements.
-
-The user will be prompted to choose from the following password criteria:
-
-* Length (must be between 8 and 128 characters)
-
-* Character type:
-
-  * Special characters 
-
-  * Numeric characters
-
-  * Lowercase characters
-
-  * Uppercase characters
-
-
-## Credits
-
-Image credits to the following:
-videogames.jpg: https://www.theverge.com/2019/8/5/20754793/trump-gun-control-video-games-violence-republicans-no-evidence-dayton-el-paso-texas-ohio
-seigiha.png background: https://subtlepatterns.com/
- bcsp.png: https://www.vice.com/en_us/article/panvnm/meet-the-black-anime-cosplayers-blowing-up-on-instagram-1
-shark.jpg: https://www.express.co.uk/news/world/1192319/shark-news-latest-great-white-share-sea-hawaii-updates-bite-marks
 
 ## License
 
