@@ -5,7 +5,7 @@ This is a repository for the NU Coding Bootcamp Homework 3
 
 This application will assist users with creating strong passwords quickly that meet a range of security requirements. This can be useful for employees, businesses, and anyone who needs unique passwords generated quickly.
 
-##Usage
+## Usage
 
 The user will be prompted to choose the length and character type (special, numeric, lowercase, uppercase). The user may also choose to copy to clipboard, which will allow them to paste on or in any text input on their phone and computer.
 
