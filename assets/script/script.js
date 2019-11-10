@@ -86,7 +86,7 @@ function copyToClipboard() {
     document.execCommand("copy");
 
     //replaces password with text indicating it has been copied to clipboard//
-    document.getElementById("displaypw").value = "Password copied to clipboard; use paste or ctrl v."
+    document.getElementById("displaypw").value = "Password copied to clipboard; use 'paste' or ctrl v to view in another location."
   
   }
 
